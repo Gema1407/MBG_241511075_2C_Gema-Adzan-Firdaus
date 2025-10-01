@@ -25,7 +25,7 @@
                     <a href="/auth/register/gudang" class="btn btn-outline-success">Daftar Petugas Gudang Baru</a>
                     <a href="/auth/register/dapur" class="btn btn-outline-warning">Daftar Petugas Dapur Baru</a>
                 </div>
-            </div>
+            </div>  
         </div>
     </div>
 </div>

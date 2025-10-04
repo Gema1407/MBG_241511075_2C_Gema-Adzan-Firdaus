@@ -1,70 +1,56 @@
 <?php
 
 namespace App\Controllers;
-
-use App\Controllers\BaseController;
 use App\Models\UserModel;
 
 class Auth extends BaseController
 {
-    public function loginForm($role)
+    protected $userModel;
+
+    public function __construct()
     {
-        if ($role !== 'gudang' && $role !== 'dapur') {
-            return redirect()->to('/')->with('error', 'Peran tidak valid.');
-        }
-        $data['role'] = $role;
-        return view('tampilan_login', $data);
+        $this->userModel = new UserModel();
     }
 
-    public function processLogin()
+    public function index()
+    {
+        return view('tampilan_login');
+    }
+
+    public function login()
     {
         $session = session();
-        $userModel = new UserModel();
-
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
-        $role = $this->request->getPost('role');
-        $expectedRole = ($role === 'gudang') ? 'admin' : 'client';
-        $user = $userModel->getUserByEmail($email);
+
+        $user = $this->userModel->where('email', $email)->first();
 
         if ($user) {
-            if (password_verify($password, $user['password'])) {
+            if (md5($password) === $user['password']) {
+                $ses_data = [
+                    'user_id'    => $user['id'],
+                    'name'       => $user['name'],
+                    'email'      => $user['email'],
+                    'role'       => $user['role'],
+                    'logged_in'  => true
+                ];
+                $session->set($ses_data);
                 
-                if ($user['role'] === $expectedRole) {
-                    
-                    $ses_data = [
-                        'user_id'    => $user['id'],
-                        'user_name'  => $user['name'],
-                        'user_role'  => $user['role'],
-                        'isLoggedIn' => TRUE
-                    ];
-                    $session->set($ses_data);
-                    
-                    return redirect()->to('/dashboard/' . $role)->with('success', 'Login berhasil! Selamat datang, ' . $user['name']);
-
-                } else {
-                    $session->setFlashdata('error', 'Peran yang Anda pilih tidak sesuai dengan akun Anda.');
-                    return redirect()->back()->withInput();
-                }
-
+                // Arahkan ke dashboard sesuai role
+                return redirect()->to($user['role'] === 'gudang' ? '/gudang' : '/dapur');
             } else {
                 $session->setFlashdata('error', 'Password yang Anda masukkan salah.');
-                return redirect()->back()->withInput();
+                return redirect()->to('/login');
             }
         } else {
-            $session->setFlashdata('error', 'Email tidak ditemukan.');
-            return redirect()->back()->withInput();
+            $session->setFlashdata('error', 'Email tidak terdaftar.');
+            return redirect()->to('/login');
         }
     }
-    
-    public function registerForm($role)
-    {
-        if ($role !== 'gudang' && $role !== 'dapur') {
-            return redirect()->to('/')->with('error', 'Peran pendaftaran tidak valid.');
-        }
 
-        $data['role'] = $role;
-        
-        return view('tampilan_register', $data); 
+    public function logout()
+    {
+        session()->destroy();
+        return redirect()->to('/login');
     }
 }

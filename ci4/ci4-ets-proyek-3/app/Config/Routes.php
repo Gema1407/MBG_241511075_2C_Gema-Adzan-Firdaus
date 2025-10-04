@@ -24,7 +24,8 @@ $routes->get('/logout', 'Auth::logout');
 // Rute untuk Gudang (Admin)
 $routes->group('gudang', ['filter' => 'auth:gudang'], function ($routes) {
     $routes->get('/', 'Gudang::dashboardGudang');
-    $routes->get('bahan_baku', 'Gudang::dashboardGudang');
+    // melihat bahan baku
+    $routes->get('bahan_baku', 'Gudang::lihatBahanBaku'); 
     // tampilan form tambah
     $routes->get('bahan_baku/tambah', 'Gudang::tambahBahanBaku');
     // menyimpan data

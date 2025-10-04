@@ -25,6 +25,16 @@ class Gudang extends BaseController
         return view('gudang/dashboard_gudang', $data);
     }
 
+    // menampilkan data bahan baku
+    public function lihatBahanBaku()
+    {
+        $data = [
+            'title' => 'Data Bahan Baku',
+            'semua_bahan' => $this->bahanBakuModel->findAll()
+        ];
+        return view('gudang/bahan_baku/tampilan_bahan_baku', $data);
+    }
+
     // Menampilkan form tambah bahan baku
     public function tambahBahanBaku()
     {

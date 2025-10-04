@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 <div class="container-fluid">
     <h3 class="mt-4">Dashboard Gudang</h3>
-    <p>Selamat datang, <strong><?= session()->get('name') ?></strong>! Berikut ringkasan status bahan baku saat ini.</p>
+    <p>Selamat datang, <strong><?= session()->get('name') ?></strong>! Silahkan pilih aksi yang akan anda lakukan melalui sidebar</p>
 
     <?php if (session()->getFlashdata('success')) : ?>
         <div class="alert alert-success alert-dismissible fade show" role="alert">

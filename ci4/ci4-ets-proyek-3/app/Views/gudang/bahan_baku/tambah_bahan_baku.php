@@ -7,7 +7,7 @@
 
     <div class="card shadow-sm">
         <div class="card-body">
-            <form action="<?= site_url('gudang/bahan-baku') ?>" method="post">
+            <form action="<?= site_url('gudang/bahan_baku/create') ?>" method="post">
                 <?= csrf_field() ?>
 
                 <div class="row">

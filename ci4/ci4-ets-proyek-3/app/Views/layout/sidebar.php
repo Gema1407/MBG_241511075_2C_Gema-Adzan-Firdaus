@@ -11,19 +11,19 @@
         <?php if (session()->get('role') == 'gudang') : ?>
             <li class="nav-item mb-1">
                 <?php ?>
-                <a class="nav-link text-white rounded <?= ($uri->getSegment(1) == 'gudang' && !$uri->getSegment(2)) ? 'active' : '' ?>" href="<?= site_url('gudang/bahan_baku') ?>">
+                <a class="nav-link text-white rounded <?= ($uri->getSegment(1) === 'gudang' && !$uri->getSegment(2)) ? 'active' : '' ?>" href="<?= site_url('gudang') ?>">
                     <i class="fas fa-tachometer-alt fa-fw me-2"></i>Dashboard
                 </a>
             </li>
             <li class="nav-item mb-1">
                 <?php ?>
-                <a class="nav-link text-white rounded href="#">
+                <a class="nav-link text-white rounded <?= ($uri->getSegment(1) === 'gudang' && $uri->getSegment(2) === 'bahan_baku' && !$uri->getSegment(3)) ? 'active' : '' ?>" href="<?= site_url('gudang/bahan_baku') ?>">
                     <i class="fas fa-boxes fa-fw me-2"></i>Data Bahan Baku
                 </a>
             </li>
             <li class="nav-item mb-1">
                  <?php ?>
-                <a class="nav-link text-white rounded <?= ($uri->getSegment(2) == 'bahan-baku' && $uri->getSegment(3) == 'new') ? 'active' : '' ?>" href="<?= site_url('gudang/bahan_baku/tambah') ?>">
+                <a class="nav-link text-white rounded <?= ($uri->getSegment(1) === 'gudang' && $uri->getSegment(2) === 'bahan_baku' && $uri->getSegment(3) === 'tambah') ? 'active' : '' ?>" href="<?= site_url('gudang/bahan_baku/tambah') ?>">
                     <i class="fas fa-plus fa-fw me-2"></i>Tambah Bahan
                 </a>
             </li>

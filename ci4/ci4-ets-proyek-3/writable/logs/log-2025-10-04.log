@@ -393,3 +393,355 @@ DEBUG - 2025-10-04 11:59:33 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-10-04 11:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-04 11:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-04 11:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:03:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:24:41 --> ErrorException: Undefined variable $uri
+[Method: GET, Route: gudang/bahan_baku]
+in APPPATH\Views\layout\sidebar.php on line 14.
+ 1 APPPATH\Views\layout\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uri', 'C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+ 9 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/dashboard_gudang', [], true)
+10 APPPATH\Controllers\Gudang.php(25): view('gudang/dashboard_gudang', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->dashboardGudang()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:28:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gudang/bahan_baku/lihat_bahan_baku.php"
+[Method: GET, Route: gudang/bahan_baku]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/bahan_baku/lihat_bahan_baku.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/lihat_bahan_baku', [], true)
+ 3 APPPATH\Controllers\Gudang.php(35): view('gudang/bahan_baku/lihat_bahan_baku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->lihatBahanBaku()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:28:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gudang/bahan_baku/lihat_bahan_baku.php"
+[Method: GET, Route: gudang/bahan_baku]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/bahan_baku/lihat_bahan_baku.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/lihat_bahan_baku', [], true)
+ 3 APPPATH\Controllers\Gudang.php(35): view('gudang/bahan_baku/lihat_bahan_baku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->lihatBahanBaku()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:28:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gudang/bahan_baku/lihat_bahan_baku.php"
+[Method: GET, Route: gudang/bahan_baku]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/bahan_baku/lihat_bahan_baku.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/lihat_bahan_baku', [], true)
+ 3 APPPATH\Controllers\Gudang.php(35): view('gudang/bahan_baku/lihat_bahan_baku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->lihatBahanBaku()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:28:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gudang/bahan_baku/lihat_bahan_baku.php"
+[Method: GET, Route: gudang/bahan_baku]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/bahan_baku/lihat_bahan_baku.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/lihat_bahan_baku', [], true)
+ 3 APPPATH\Controllers\Gudang.php(35): view('gudang/bahan_baku/lihat_bahan_baku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->lihatBahanBaku()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:28:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gudang/bahan_baku/lihat_bahan_baku.php"
+[Method: GET, Route: gudang/bahan_baku]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/bahan_baku/lihat_bahan_baku.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/lihat_bahan_baku', [], true)
+ 3 APPPATH\Controllers\Gudang.php(35): view('gudang/bahan_baku/lihat_bahan_baku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->lihatBahanBaku()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:28:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gudang/bahan_baku/lihat_bahan_baku.php"
+[Method: GET, Route: gudang/bahan_baku]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/bahan_baku/lihat_bahan_baku.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/lihat_bahan_baku', [], true)
+ 3 APPPATH\Controllers\Gudang.php(35): view('gudang/bahan_baku/lihat_bahan_baku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->lihatBahanBaku()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:28:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gudang/bahan_baku/lihat_bahan_baku.php"
+[Method: GET, Route: gudang/bahan_baku]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/bahan_baku/lihat_bahan_baku.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/lihat_bahan_baku', [], true)
+ 3 APPPATH\Controllers\Gudang.php(35): view('gudang/bahan_baku/lihat_bahan_baku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->lihatBahanBaku()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:28:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gudang/bahan_baku/lihat_bahan_baku.php"
+[Method: GET, Route: gudang/bahan_baku]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/bahan_baku/lihat_bahan_baku.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/lihat_bahan_baku', [], true)
+ 3 APPPATH\Controllers\Gudang.php(35): view('gudang/bahan_baku/lihat_bahan_baku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->lihatBahanBaku()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:28:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gudang/bahan_baku/lihat_bahan_baku.php"
+[Method: GET, Route: gudang/bahan_baku]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/bahan_baku/lihat_bahan_baku.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/lihat_bahan_baku', [], true)
+ 3 APPPATH\Controllers\Gudang.php(35): view('gudang/bahan_baku/lihat_bahan_baku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->lihatBahanBaku()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:28:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gudang/bahan_baku/lihat_bahan_baku.php"
+[Method: GET, Route: gudang/bahan_baku]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/bahan_baku/lihat_bahan_baku.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/lihat_bahan_baku', [], true)
+ 3 APPPATH\Controllers\Gudang.php(35): view('gudang/bahan_baku/lihat_bahan_baku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->lihatBahanBaku()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:28:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gudang/bahan_baku/lihat_bahan_baku.php"
+[Method: GET, Route: gudang/bahan_baku]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/bahan_baku/lihat_bahan_baku.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/lihat_bahan_baku', [], true)
+ 3 APPPATH\Controllers\Gudang.php(35): view('gudang/bahan_baku/lihat_bahan_baku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->lihatBahanBaku()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:28:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gudang/bahan_baku/lihat_bahan_baku.php"
+[Method: GET, Route: gudang/bahan_baku]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/bahan_baku/lihat_bahan_baku.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/lihat_bahan_baku', [], true)
+ 3 APPPATH\Controllers\Gudang.php(35): view('gudang/bahan_baku/lihat_bahan_baku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->lihatBahanBaku()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:37:17 --> ErrorException: Undefined variable $current_uri
+[Method: GET, Route: gudang/bahan_baku/tambah]
+in APPPATH\Views\layout\sidebar.php on line 14.
+ 1 APPPATH\Views\layout\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_uri', 'C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+ 9 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/tambah_bahan_baku', [], true)
+10 APPPATH\Controllers\Gudang.php(44): view('gudang/bahan_baku/tambah_bahan_baku', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->tambahBahanBaku()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:49:36 --> ErrorException: Undefined variable $current_uri
+[Method: GET, Route: gudang]
+in APPPATH\Views\layout\sidebar.php on line 14.
+ 1 APPPATH\Views\layout\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_uri', 'C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+ 9 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/dashboard_gudang', [], true)
+10 APPPATH\Controllers\Gudang.php(25): view('gudang/dashboard_gudang', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->dashboardGudang()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 12:55:33 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "3"
+[Method: GET, Route: gudang]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(3)
+ 2 APPPATH\Views\layout\sidebar.php(26): CodeIgniter\HTTP\URI->getSegment(3)
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\sidebar.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 6 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 7 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+10 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/dashboard_gudang', [], true)
+11 APPPATH\Controllers\Gudang.php(25): view('gudang/dashboard_gudang', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->dashboardGudang()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 12:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 12:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 13:04:32 --> ParseError: syntax error, unexpected token ")"
+[Method: GET, Route: gudang/bahan_baku/tambah]
+in APPPATH\Views\layout\sidebar.php on line 20.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 3 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+ 7 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/bahan_baku/tambah_bahan_baku', [], true)
+ 8 APPPATH\Controllers\Gudang.php(44): view('gudang/bahan_baku/tambah_bahan_baku', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->tambahBahanBaku()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 13:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 13:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

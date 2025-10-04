@@ -30,17 +30,23 @@ $routes->group('gudang', ['filter' => 'auth:gudang'], function ($routes) {
     $routes->get('bahan_baku/tambah', 'Gudang::tambahBahanBaku');
     // menyimpan data
     $routes->post('bahan_baku/create', 'Gudang::createBahanBaku');
-    //mengubah data bahan baku
+    // mengubah data bahan baku
     $routes->get('bahan_baku/edit/(:num)', 'Gudang::editBahanBaku/$1');
     $routes->post('bahan_baku/edit/(:num)', 'Gudang::updateBahanBaku/$1');
     $routes->post('bahan_baku/editStokBahanBaku/(:num)', 'Gudang::editStokBahanBaku/$1');
     $routes->get('bahan_baku/hapus/(:num)', 'Gudang::hapusBahanBaku/$1');
+    // permintaan gudang
+    $routes->get('permintaan', 'Gudang::daftarPermintaan');
+    $routes->get('permintaan/detail/(:num)', 'Gudang::detailPermintaan/$1');
 });
 
 
 // Rute untuk Dapur (Client)
 $routes->group('dapur', ['filter' => 'auth:dapur'], function ($routes) {
-    $routes->get('/', 'Dapur::index');
+    $routes->get('/', 'Dapur::dashboardDapur');
+    // riwayat permintaan
+    $routes->get('riwayat', 'Dapur::riwayatPermintaan');
+    $routes->get('riwayat/detail/(:num)', 'Dapur::detailPermintaan/$1');
 });
 
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {

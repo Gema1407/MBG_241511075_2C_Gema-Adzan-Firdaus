@@ -3,14 +3,20 @@
 namespace App\Controllers;
 
 use App\Models\BahanBakuModel;
+use App\Models\PermintaanModel;
+use App\Models\PermintaanDetailModel;
 
 class Gudang extends BaseController
 {
     protected $bahanBakuModel;
+    protected $permintaanModel;
+    protected $permintaanDetailModel;
 
     public function __construct()
     {
         $this->bahanBakuModel = new BahanBakuModel();
+        $this->permintaanModel = new PermintaanModel();      
+        $this->permintaanDetailModel = new PermintaanDetailModel(); 
     }
 
     public function dashboardGudang()
@@ -173,5 +179,40 @@ class Gudang extends BaseController
         }
 
         return redirect()->to('/gudang/bahan_baku');
+    }
+
+    public function daftarPermintaan()
+    {
+        $data = [
+            'title' => 'Daftar Permintaan Bahan',
+            'permintaan' => $this->permintaanModel
+                                ->select('permintaan.*, user.name as nama_pemohon')
+                                ->join('user', 'user.id = permintaan.pemohon_id')
+                                ->orderBy('permintaan.created_at', 'DESC')
+                                ->findAll()
+        ];
+        return view('gudang/permintaan/daftar_permintaan', $data);
+    }
+
+    public function detailPermintaan($id)
+    {
+        $data = [
+            'title' => 'Detail Permintaan Bahan',
+            'permintaan' => $this->permintaanModel
+                                ->select('permintaan.*, user.name as nama_pemohon')
+                                ->join('user', 'user.id = permintaan.pemohon_id')
+                                ->find($id),
+            'detail_bahan' => $this->permintaanDetailModel
+                                ->select('permintaan_detail.*, bahan_baku.nama, bahan_baku.satuan, bahan_baku.jumlah as stok_saat_ini')
+                                ->join('bahan_baku', 'bahan_baku.id = permintaan_detail.bahan_id')
+                                ->where('permintaan_id', $id)
+                                ->findAll()
+        ];
+
+        if (empty($data['permintaan'])) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
+
+        return view('gudang/permintaan/detail_permintaan', $data);
     }
 }

@@ -1008,3 +1008,576 @@ DEBUG - 2025-10-04 14:52:28 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-10-04 14:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-04 14:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-04 14:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:07:39 --> ErrorException: Undefined variable $bahan_tersedia
+[Method: GET, Route: dapur]
+in APPPATH\Views\dapur\dashboard_dapur.php on line 66.
+ 1 APPPATH\Views\dapur\dashboard_dapur.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan_tersedia', 'C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\dashboard_dapur.php', 66)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\dashboard_dapur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+ 5 APPPATH\Controllers\Dapur.php(24): view('dapur/dashboard_dapur')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:09:35 --> ErrorException: Undefined variable $bahan_tersedia
+[Method: GET, Route: dapur]
+in APPPATH\Views\dapur\dashboard_dapur.php on line 66.
+ 1 APPPATH\Views\dapur\dashboard_dapur.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan_tersedia', 'C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\dashboard_dapur.php', 66)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\dashboard_dapur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+ 5 APPPATH\Controllers\Dapur.php(24): view('dapur/dashboard_dapur')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:09:36 --> ErrorException: Undefined variable $bahan_tersedia
+[Method: GET, Route: dapur]
+in APPPATH\Views\dapur\dashboard_dapur.php on line 66.
+ 1 APPPATH\Views\dapur\dashboard_dapur.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan_tersedia', 'C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\dashboard_dapur.php', 66)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\dashboard_dapur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+ 5 APPPATH\Controllers\Dapur.php(24): view('dapur/dashboard_dapur')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:10:55 --> ParseError: syntax error, unexpected token "=>"
+[Method: GET, Route: dapur]
+in APPPATH\Controllers\Dapur.php on line 55.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Controllers\\Dapur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Dapur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Dapur')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Dapur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:11:36 --> ErrorException: Undefined variable $bahan_tersedia
+[Method: GET, Route: dapur]
+in APPPATH\Views\dapur\dashboard_dapur.php on line 66.
+ 1 APPPATH\Views\dapur\dashboard_dapur.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan_tersedia', 'C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\dashboard_dapur.php', 66)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\dashboard_dapur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+ 5 APPPATH\Controllers\Dapur.php(24): view('dapur/dashboard_dapur')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:28:00 --> ParseError: syntax error, unexpected token "endif", expecting end of file
+[Method: GET, Route: dapur]
+in APPPATH\Views\layout\sidebar.php on line 46.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 3 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+ 7 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+ 8 APPPATH\Controllers\Dapur.php(24): view('dapur/dashboard_dapur')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:28:35 --> ParseError: syntax error, unexpected token "(", expecting ":"
+[Method: GET, Route: dapur]
+in APPPATH\Views\layout\sidebar.php on line 35.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 3 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+ 7 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+ 8 APPPATH\Controllers\Dapur.php(24): view('dapur/dashboard_dapur')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:28:42 --> ParseError: syntax error, unexpected token "(", expecting ":"
+[Method: GET, Route: dapur]
+in APPPATH\Views\layout\sidebar.php on line 35.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 3 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+ 7 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+ 8 APPPATH\Controllers\Dapur.php(24): view('dapur/dashboard_dapur')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:28:44 --> ParseError: syntax error, unexpected token "(", expecting ":"
+[Method: GET, Route: dapur]
+in APPPATH\Views\layout\sidebar.php on line 35.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 3 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+ 7 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+ 8 APPPATH\Controllers\Dapur.php(24): view('dapur/dashboard_dapur')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:28:45 --> ParseError: syntax error, unexpected token "(", expecting ":"
+[Method: GET, Route: dapur]
+in APPPATH\Views\layout\sidebar.php on line 35.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 3 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+ 7 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+ 8 APPPATH\Controllers\Dapur.php(24): view('dapur/dashboard_dapur')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:43:02 --> Error: Call to undefined function base_all()
+[Method: GET, Route: gudang]
+in APPPATH\Views\layout\layout_template.php on line 35.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('gudang/dashboard_gudang', [], true)
+ 5 APPPATH\Controllers\Gudang.php(25): view('gudang/dashboard_gudang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->dashboardGudang()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:44:03 --> ErrorException: Undefined property: App\Controllers\Gudang::$permintaanModel
+[Method: GET, Route: gudang/permintaan]
+in APPPATH\Controllers\Gudang.php on line 182.
+ 1 APPPATH\Controllers\Gudang.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Gudang::$permintaanModel', 'C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Controllers\\Gudang.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->daftarPermintaan()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:44:08 --> ErrorException: Undefined property: App\Controllers\Gudang::$permintaanModel
+[Method: GET, Route: gudang/permintaan]
+in APPPATH\Controllers\Gudang.php on line 182.
+ 1 APPPATH\Controllers\Gudang.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Gudang::$permintaanModel', 'C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Controllers\\Gudang.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->daftarPermintaan()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:50:51 --> ErrorException: Undefined variable $bahan_tersedia
+[Method: GET, Route: dapur/permintaan/buat]
+in APPPATH\Views\dapur\buat_permintaan.php on line 67.
+ 1 APPPATH\Views\dapur\buat_permintaan.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan_tersedia', 'C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\buat_permintaan.php', 67)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\buat_permintaan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/buat_permintaan', [], true)
+ 5 APPPATH\Controllers\Dapur.php(37): view('dapur/buat_permintaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->buatPermintaan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:54:17 --> ErrorException: Undefined variable $bahan_tersedia
+[Method: GET, Route: dapur/permintaan/buat]
+in APPPATH\Views\dapur\buat_permintaan.php on line 67.
+ 1 APPPATH\Views\dapur\buat_permintaan.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan_tersedia', 'C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\buat_permintaan.php', 67)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\buat_permintaan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/buat_permintaan', [], true)
+ 5 APPPATH\Controllers\Dapur.php(37): view('dapur/buat_permintaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->buatPermintaan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:54:24 --> ErrorException: Undefined variable $bahan_tersedia
+[Method: GET, Route: dapur/permintaan/buat]
+in APPPATH\Views\dapur\buat_permintaan.php on line 67.
+ 1 APPPATH\Views\dapur\buat_permintaan.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bahan_tersedia', 'C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\buat_permintaan.php', 67)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\buat_permintaan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/buat_permintaan', [], true)
+ 5 APPPATH\Controllers\Dapur.php(37): view('dapur/buat_permintaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->buatPermintaan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:56:50 --> Error: Call to a member function select() on null
+[Method: GET, Route: gudang/permintaan]
+in APPPATH\Controllers\Gudang.php on line 187.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->daftarPermintaan()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:58:12 --> Error: Call to a member function select() on null
+[Method: GET, Route: gudang/permintaan]
+in APPPATH\Controllers\Gudang.php on line 187.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->daftarPermintaan()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:58:28 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "3"
+[Method: GET, Route: dapur]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(3)
+ 2 APPPATH\Views\layout\sidebar.php(35): CodeIgniter\HTTP\URI->getSegment(3)
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\sidebar.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 6 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 7 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+10 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+11 APPPATH\Controllers\Dapur.php(28): view('dapur/dashboard_dapur', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:59:26 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "3"
+[Method: GET, Route: dapur]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(3)
+ 2 APPPATH\Views\layout\sidebar.php(35): CodeIgniter\HTTP\URI->getSegment(3)
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\sidebar.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 6 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 7 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+10 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+11 APPPATH\Controllers\Dapur.php(24): view('dapur/dashboard_dapur')
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:59:27 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "3"
+[Method: GET, Route: dapur]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(3)
+ 2 APPPATH\Views\layout\sidebar.php(35): CodeIgniter\HTTP\URI->getSegment(3)
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\sidebar.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 6 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 7 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+10 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+11 APPPATH\Controllers\Dapur.php(24): view('dapur/dashboard_dapur')
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 15:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 15:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 15:59:31 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "3"
+[Method: GET, Route: dapur]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(3)
+ 2 APPPATH\Views\layout\sidebar.php(35): CodeIgniter\HTTP\URI->getSegment(3)
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\sidebar.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 6 APPPATH\Views\layout\layout_template.php(74): CodeIgniter\View\View->include('layout/sidebar')
+ 7 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\layout\\layout_template.php')
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/layout_template', [], true)
+10 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/dashboard_dapur', [], true)
+11 APPPATH\Controllers\Dapur.php(24): view('dapur/dashboard_dapur')
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->dashboardDapur()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 16:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-10-04 16:02:46 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\dapur\riwayat_permintaan.php on line 42.
+ 1 APPPATH\Views\dapur\riwayat_permintaan.php(42): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\riwayat_permintaan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/riwayat_permintaan', [], true)
+ 5 APPPATH\Controllers\Dapur.php(91): view('dapur/riwayat_permintaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->riwayatPermintaan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 16:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-10-04 16:08:50 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\dapur\riwayat_permintaan.php on line 42.
+ 1 APPPATH\Views\dapur\riwayat_permintaan.php(42): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\riwayat_permintaan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/riwayat_permintaan', [], true)
+ 5 APPPATH\Controllers\Dapur.php(37): view('dapur/riwayat_permintaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->riwayatPermintaan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 16:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-10-04 16:08:51 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\dapur\riwayat_permintaan.php on line 42.
+ 1 APPPATH\Views\dapur\riwayat_permintaan.php(42): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\riwayat_permintaan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/riwayat_permintaan', [], true)
+ 5 APPPATH\Controllers\Dapur.php(37): view('dapur/riwayat_permintaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->riwayatPermintaan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 16:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-10-04 16:11:11 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\dapur\riwayat_permintaan.php on line 42.
+ 1 APPPATH\Views\dapur\riwayat_permintaan.php(42): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\riwayat_permintaan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/riwayat_permintaan', [], true)
+ 5 APPPATH\Controllers\Dapur.php(37): view('dapur/riwayat_permintaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->riwayatPermintaan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 16:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-04 16:11:23 --> Error: Call to a member function select() on null
+[Method: GET, Route: gudang/permintaan]
+in APPPATH\Controllers\Gudang.php on line 187.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gudang->daftarPermintaan()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gudang))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 16:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-10-04 16:13:48 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\dapur\riwayat_permintaan.php on line 42.
+ 1 APPPATH\Views\dapur\riwayat_permintaan.php(42): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\riwayat_permintaan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/riwayat_permintaan', [], true)
+ 5 APPPATH\Controllers\Dapur.php(37): view('dapur/riwayat_permintaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->riwayatPermintaan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')
+DEBUG - 2025-10-04 16:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-04 16:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-10-04 16:13:52 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\dapur\riwayat_permintaan.php on line 42.
+ 1 APPPATH\Views\dapur\riwayat_permintaan.php(42): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\app\\Views\\dapur\\riwayat_permintaan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('dapur/riwayat_permintaan', [], true)
+ 5 APPPATH\Controllers\Dapur.php(37): view('dapur/riwayat_permintaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dapur->riwayatPermintaan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dapur))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511075_2C_Gema-Adzan-Firdaus\\ci4\\ci4-ets-proyek-3\\public\\index.php')

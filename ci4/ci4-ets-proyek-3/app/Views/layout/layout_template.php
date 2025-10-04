@@ -21,23 +21,50 @@
             flex: 1;
         }
 
-        #sidebar {
+        #sidebar-themed {
             min-width: 250px;
             max-width: 250px;
-            background: #343a40;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
             color: #fff;
             transition: all 0.3s;
         }
 
-        #sidebar.active {
+        #sidebar-themed.active {
             margin-left: -250px;
+        }
+
+        #sidebar-themed .nav-link {
+            transition: background-color 0.2s;
+        }
+
+        #sidebar-themed .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        #sidebar-themed .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.2);
+            font-weight: 600;
         }
 
         #content {
             width: 100%;
-            padding: 20px;
+            padding: 0;
             min-height: 100vh;
             transition: all 0.3s;
+        }
+
+        #content-container {
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            #sidebar-themed {
+                margin-left: -250px;
+            }
+
+            #sidebar-themed.active {
+                margin-left: 0;
+            }
         }
     </style>
 </head>
@@ -58,7 +85,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.getElementById('sidebarCollapse').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('sidebar-themed').classList.toggle('active');
         });
     </script>
 </body>

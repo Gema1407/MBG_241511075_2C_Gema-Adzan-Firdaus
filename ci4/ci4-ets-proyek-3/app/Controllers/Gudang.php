@@ -13,7 +13,7 @@ class Gudang extends BaseController
         $this->bahanBakuModel = new BahanBakuModel();
     }
 
-    public function index()
+    public function dashboardGudang()
     {
         $data = [
             'title'                 => 'Dashboard Gudang',
@@ -26,13 +26,12 @@ class Gudang extends BaseController
     }
 
     // Menampilkan form tambah bahan baku
-    public function newBahanBaku()
+    public function tambahBahanBaku()
     {
         $data = [
             'title' => 'Tambah Bahan Baku',
-            'validation' => \Config\Services::validation()
         ];
-        return view('gudang/bahan_baku/tambah_bahan_baku    ', $data);
+        return view('gudang/bahan_baku/tambah_bahan_baku', $data);
     }
 
     // Menyimpan Data
@@ -49,7 +48,7 @@ class Gudang extends BaseController
         ];
 
         if (!$this->validate($rules)) {
-            return redirect()->back()->withInput()->with('validation', $this->validator);
+            return redirect()->to('gudang/bahan_baku/tambah')->withInput()->with('validation', $this->validator);
         }
 
         // Simpan data ke database

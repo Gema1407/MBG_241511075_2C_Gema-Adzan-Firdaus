@@ -23,15 +23,17 @@ $routes->get('/logout', 'Auth::logout');
 
 // Rute untuk Gudang (Admin)
 $routes->group('gudang', ['filter' => 'auth:gudang'], function ($routes) {
-    $routes->get('/', 'Gudang::index');
-    $routes->get('bahan-baku/new', 'Gudang::newBahanBaku');
-    $routes->post('bahan-baku', 'Gudang::createBahanBaku');
+    $routes->get('/', 'Gudang::dashboardGudang');
+    $routes->get('bahan_baku', 'Gudang::dashboardGudang');
+    // tampilan form tambah
+    $routes->get('bahan_baku/tambah', 'Gudang::tambahBahanBaku');
+    // menyimpan data
+    $routes->post('bahan_baku/create', 'Gudang::createBahanBaku');
 });
 
 // Rute untuk Dapur (Client)
 $routes->group('dapur', ['filter' => 'auth:dapur'], function ($routes) {
     $routes->get('/', 'Dapur::index');
-    // Tambahkan rute lain untuk fitur dapur di sini
 });
 
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {

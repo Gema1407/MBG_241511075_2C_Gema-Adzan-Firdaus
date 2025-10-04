@@ -7,7 +7,7 @@
 
     <ul class="list-unstyled components">
         <p class="text-center small"><?= ucfirst(session()->get('role')) ?></p>
-        
+
         <?php if (session()->get('role') == 'gudang') : ?>
             <li class="nav-item mb-1">
                 <a class="nav-link text-white rounded <?= ($uri->getSegment(1) === 'gudang' && !$uri->getSegment(2)) ? 'active' : '' ?>" href="<?= site_url('gudang') ?>">
@@ -24,11 +24,17 @@
                     <i class="fas fa-clipboard-list fa-fw me-2"></i>Daftar Permintaan
                 </a>
             </li>
-        
+
+
         <?php elseif (session()->get('role') == 'dapur') : ?>
             <li class="nav-item mb-1">
                 <a class="nav-link text-white rounded <?= ($uri->getSegment(1) === 'dapur' && !$uri->getSegment(2)) ? 'active' : '' ?>" href="<?= site_url('dapur') ?>">
                     <i class="fas fa-tachometer-alt fa-fw me-2"></i>Dashboard
+                </a>
+            </li>
+            <li class="nav-item mb-1">
+                <a class="nav-link text-white rounded <?= ($uri->getSegment(1) === 'dapur' && $uri->getSegment(2) === 'permintaan') ? 'active' : '' ?>" href="<?= site_url('dapur/permintaan/buat') ?>">
+                    <i class="fas fa-plus fa-fw me-2"></i>Buat Permintaan
                 </a>
             </li>
             <li class="nav-item mb-1">

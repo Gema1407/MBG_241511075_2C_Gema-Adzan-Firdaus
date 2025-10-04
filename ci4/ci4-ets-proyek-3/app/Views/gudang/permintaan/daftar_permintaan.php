@@ -13,6 +13,7 @@
                             <th>No</th>
                             <th>Pemohon</th>
                             <th>Tanggal Masak</th>
+                            <th>Tanggal Permintaan </th>
                             <th>Menu</th>
                             <th>Status</th>
                             <th class="text-center">Aksi</th>
@@ -21,7 +22,7 @@
                     <tbody>
                         <?php if (empty($permintaan)) : ?>
                             <tr>
-                                <td colspan="6" class="text-center py-5 text-muted">Belum ada permintaan masuk.</td>
+                                <td colspan="7" class="text-center py-5 text-muted">Belum ada permintaan masuk.</td>
                             </tr>
                         <?php else : ?>
                             <?php $no = 1; ?>
@@ -29,14 +30,20 @@
                                 <tr>
                                     <td><?= $no++ ?></td>
                                     <td><?= esc($item['nama_pemohon']) ?></td>
-                                    <td><?= date('d M Y', strtotime($item['tgl_masak'])) ?></td>
+                                    <td>
+
+                                        <?= ($item['tgl_masak'] && $item['tgl_masak'] != '0000-00-00') ? date('d M Y', strtotime($item['tgl_masak'])) : '-' ?>
+                                    </td>
+                                    <td>
+                                        <?= ($item['created_at']) ? date('d M Y, H:i', strtotime($item['created_at'])) : '-' ?>
+                                    </td>
                                     <td><?= esc($item['menu_makan']) ?></td>
                                     <td>
                                         <?php
-                                            $statusClass = 'bg-secondary';
-                                            if ($item['status'] == 'disetujui') $statusClass = 'bg-success';
-                                            if ($item['status'] == 'ditolak') $statusClass = 'bg-danger';
-                                            if ($item['status'] == 'menunggu') $statusClass = 'bg-warning text-dark';
+                                        $statusClass = 'bg-secondary';
+                                        if ($item['status'] == 'disetujui') $statusClass = 'bg-success';
+                                        if ($item['status'] == 'ditolak') $statusClass = 'bg-danger';
+                                        if ($item['status'] == 'menunggu') $statusClass = 'bg-warning text-dark';
                                         ?>
                                         <span class="badge <?= $statusClass ?>"><?= ucfirst($item['status']) ?></span>
                                     </td>

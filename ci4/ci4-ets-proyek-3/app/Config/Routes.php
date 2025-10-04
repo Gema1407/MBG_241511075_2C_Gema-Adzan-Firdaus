@@ -47,6 +47,9 @@ $routes->group('dapur', ['filter' => 'auth:dapur'], function ($routes) {
     // riwayat permintaan
     $routes->get('riwayat', 'Dapur::riwayatPermintaan');
     $routes->get('riwayat/detail/(:num)', 'Dapur::detailPermintaan/$1');
+    // buat permintaan
+    $routes->get('permintaan/buat', 'Dapur::buatPermintaan');
+    $routes->post('permintaan/simpan', 'Dapur::simpanPermintaan');
 });
 
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {

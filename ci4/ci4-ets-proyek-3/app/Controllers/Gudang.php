@@ -15,18 +15,18 @@ class Gudang extends BaseController
     public function __construct()
     {
         $this->bahanBakuModel = new BahanBakuModel();
-        $this->permintaanModel = new PermintaanModel();      
-        $this->permintaanDetailModel = new PermintaanDetailModel(); 
+        $this->permintaanModel = new PermintaanModel();
+        $this->permintaanDetailModel = new PermintaanDetailModel();
     }
 
     public function dashboardGudang()
     {
         $data = [
-            'title'                 => 'Dashboard Gudang',
-            'total_bahan'           => $this->bahanBakuModel->countAllResults(),
-            'segera_kadaluarsa'     => $this->bahanBakuModel->where('status', 'segera_kadaluarsa')->countAllResults(),
-            'sudah_kadaluarsa'      => $this->bahanBakuModel->where('status', 'kadaluarsa')->countAllResults(),
-            'stok_habis'            => $this->bahanBakuModel->where('status', 'habis')->countAllResults(),
+            'title' => 'Dashboard Gudang',
+            'total_bahan_baku' => $this->bahanBakuModel->countAllResults(),
+            'permintaan_masuk' => $this->permintaanModel->where('status', 'menunggu')->countAllResults(),
+            'permintaan_diproses' => $this->permintaanModel->whereIn('status', ['disetujui', 'ditolak'])->countAllResults(),
+            'total_permintaan' => $this->permintaanModel->countAllResults(),
         ];
         return view('gudang/dashboard_gudang', $data);
     }
@@ -68,7 +68,7 @@ class Gudang extends BaseController
         }
 
         // Simpan data ke database
-         $tanggalKadaluarsa = $this->request->getPost('tanggal_kadaluarsa');
+        $tanggalKadaluarsa = $this->request->getPost('tanggal_kadaluarsa');
         $jumlah = $this->request->getPost('jumlah');
 
         $status = 'tersedia';
@@ -168,7 +168,7 @@ class Gudang extends BaseController
     }
 
     public function hapusBahanBaku($id)
-    { 
+    {
         $bahan = $this->bahanBakuModel->find($id);
 
         if ($bahan && $bahan['status'] == 'kadaluarsa') {
@@ -186,10 +186,10 @@ class Gudang extends BaseController
         $data = [
             'title' => 'Daftar Permintaan Bahan',
             'permintaan' => $this->permintaanModel
-                                ->select('permintaan.*, user.name as nama_pemohon')
-                                ->join('user', 'user.id = permintaan.pemohon_id')
-                                ->orderBy('permintaan.created_at', 'DESC')
-                                ->findAll()
+                ->select('permintaan.*, user.name as nama_pemohon')
+                ->join('user', 'user.id = permintaan.pemohon_id')
+                ->orderBy('permintaan.created_at', 'DESC')
+                ->findAll()
         ];
         return view('gudang/permintaan/daftar_permintaan', $data);
     }
@@ -199,14 +199,14 @@ class Gudang extends BaseController
         $data = [
             'title' => 'Detail Permintaan Bahan',
             'permintaan' => $this->permintaanModel
-                                ->select('permintaan.*, user.name as nama_pemohon')
-                                ->join('user', 'user.id = permintaan.pemohon_id')
-                                ->find($id),
+                ->select('permintaan.*, user.name as nama_pemohon')
+                ->join('user', 'user.id = permintaan.pemohon_id')
+                ->find($id),
             'detail_bahan' => $this->permintaanDetailModel
-                                ->select('permintaan_detail.*, bahan_baku.nama, bahan_baku.satuan, bahan_baku.jumlah as stok_saat_ini')
-                                ->join('bahan_baku', 'bahan_baku.id = permintaan_detail.bahan_id')
-                                ->where('permintaan_id', $id)
-                                ->findAll()
+                ->select('permintaan_detail.*, bahan_baku.nama, bahan_baku.satuan, bahan_baku.jumlah as stok_saat_ini')
+                ->join('bahan_baku', 'bahan_baku.id = permintaan_detail.bahan_id')
+                ->where('permintaan_id', $id)
+                ->findAll()
         ];
 
         if (empty($data['permintaan'])) {

@@ -25,12 +25,17 @@ $routes->get('/logout', 'Auth::logout');
 $routes->group('gudang', ['filter' => 'auth:gudang'], function ($routes) {
     $routes->get('/', 'Gudang::dashboardGudang');
     // melihat bahan baku
-    $routes->get('bahan_baku', 'Gudang::lihatBahanBaku'); 
+    $routes->get('bahan_baku', 'Gudang::lihatBahanBaku');
     // tampilan form tambah
     $routes->get('bahan_baku/tambah', 'Gudang::tambahBahanBaku');
     // menyimpan data
     $routes->post('bahan_baku/create', 'Gudang::createBahanBaku');
+    //mengubah data bahan baku
+    $routes->get('bahan_baku/edit/(:num)', 'Gudang::editBahanBaku/$1');
+    $routes->post('bahan_baku/edit/(:num)', 'Gudang::updateBahanBaku/$1');
+    $routes->post('bahan_baku/editStokBahanBaku/(:num)', 'Gudang::editStokBahanBaku/$1');
 });
+
 
 // Rute untuk Dapur (Client)
 $routes->group('dapur', ['filter' => 'auth:dapur'], function ($routes) {

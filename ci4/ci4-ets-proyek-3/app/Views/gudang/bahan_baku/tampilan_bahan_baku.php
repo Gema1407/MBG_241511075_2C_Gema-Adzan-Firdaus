@@ -51,20 +51,54 @@
                                     <td><?= date('d M Y', strtotime($bahan['tanggal_kadaluarsa'])) ?></td>
                                     <td class="text-center">
                                         <?php
-                                        $statusClass = 'bg-secondary'; 
+                                        $statusClass = 'bg-secondary';
                                         switch ($bahan['status']) {
-                                            case 'tersedia': $statusClass = 'bg-success'; break;
-                                            case 'segera_kadaluarsa': $statusClass = 'bg-warning text-dark'; break;
-                                            case 'kadaluarsa': $statusClass = 'bg-danger'; break;
-                                            case 'habis': $statusClass = 'bg-dark'; break;
+                                            case 'tersedia':
+                                                $statusClass = 'bg-success';
+                                                break;
+                                            case 'segera_kadaluarsa':
+                                                $statusClass = 'bg-warning text-dark';
+                                                break;
+                                            case 'kadaluarsa':
+                                                $statusClass = 'bg-danger';
+                                                break;
+                                            case 'habis':
+                                                $statusClass = 'bg-dark';
+                                                break;
                                         }
                                         ?>
                                         <span class="badge <?= $statusClass ?>"><?= ucfirst(str_replace('_', ' ', $bahan['status'])) ?></span>
                                     </td>
                                     <td class="text-center">
-                                        <a href="#" class="btn btn-sm btn-info" title="Edit"><i class="fas fa-edit"></i></a>
+                                       <a href="/gudang/bahan_baku/edit/<?= $bahan['id']; ?>" class="btn btn-sm btn-info" title="Edit"><i class="fas fa-edit"></i></a>
                                         <a href="#" class="btn btn-sm btn-danger" title="Hapus"><i class="fas fa-trash"></i></a>
                                     </td>
+                                    <div class="modal fade" id="updateStokModal<?= $bahan['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Update Stok: <?= $bahan['nama']; ?></h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <form action="/gudang/bahan_baku/editStokBahanBaku/<?= $bahan['id']; ?>" method="post">
+                                                    <?= csrf_field(); ?>
+                                                    <div class="modal-body">
+                                                        <div class="form-group">
+                                                            <label for="jumlah">Jumlah Stok Baru</label>
+                                                            <input type="number" class="form-control" id="jumlah" name="jumlah" value="<?= $bahan['jumlah']; ?>" min="0" required>
+                                                            <small class="form-text text-muted">Stok saat ini: <?= $bahan['jumlah'] . ' ' . $bahan['satuan']; ?></small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                                                        <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </tr>
                             <?php endforeach; ?>
                         <?php endif; ?>

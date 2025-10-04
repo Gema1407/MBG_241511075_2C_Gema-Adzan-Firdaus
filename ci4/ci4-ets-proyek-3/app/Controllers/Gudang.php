@@ -76,4 +76,67 @@ class Gudang extends BaseController
         session()->setFlashdata('success', 'Data bahan baku berhasil ditambahkan.');
         return redirect()->to('/gudang');
     }
+
+    public function editStokBahanBaku($id)
+    {
+        $jumlahBaru = $this->request->getPost('jumlah');
+
+        if ($jumlahBaru === null || $jumlahBaru < 0) {
+            session()->setFlashdata('error', 'Update stok gagal! Jumlah tidak boleh kurang dari 0.');
+            return redirect()->to('/gudang/bahan_baku');
+        }
+
+        $data = ['jumlah' => $jumlahBaru];
+
+        if ($this->bahanBakuModel->update($id, $data)) {
+            session()->setFlashdata('success', 'Stok bahan baku berhasil diperbarui.');
+        } else {
+            session()->setFlashdata('error', 'Gagal memperbarui stok bahan baku.');
+        }
+        return redirect()->to('/gudang/bahan_baku');
+    }
+
+    public function editBahanBaku($id)
+    {
+        $data = [
+            'title' => 'Edit Bahan Baku',
+            'bahan' => $this->bahanBakuModel->find($id),
+            'validation' => \Config\Services::validation()
+        ];
+
+        if (empty($data['bahan'])) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data bahan baku tidak ditemukan.');
+        }
+
+        return view('gudang/bahan_baku/edit_bahan_baku', $data);
+    }
+
+    public function updateBahanBaku($id)
+    {
+        $rules = [
+            'nama' => 'required|min_length[3]',
+            'kategori' => 'required',
+            'jumlah' => 'required|numeric|greater_than_equal_to[0]',
+            'satuan' => 'required',
+            'tanggal_masuk' => 'required|valid_date',
+            'tanggal_kadaluarsa' => 'required|valid_date'
+        ];
+
+        if (!$this->validate($rules)) {
+            return redirect()->to('/gudang/bahan_baku/edit/' . $id)->withInput();
+        }
+
+        $this->bahanBakuModel->save([
+            'id' => $id,
+            'nama' => $this->request->getPost('nama'),
+            'kategori' => $this->request->getPost('kategori'),
+            'jumlah' => $this->request->getPost('jumlah'),
+            'satuan' => $this->request->getPost('satuan'),
+            'tanggal_masuk' => $this->request->getPost('tanggal_masuk'),
+            'tanggal_kadaluarsa' => $this->request->getPost('tanggal_kadaluarsa'),
+        ]);
+
+        session()->setFlashdata('success', 'Data bahan baku berhasil diubah.');
+        return redirect()->to('/gudang/bahan_baku');
+    }
 }

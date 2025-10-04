@@ -16,6 +16,13 @@
         </div>
     <?php endif; ?>
 
+    <?php if (session()->getFlashdata('error')) : ?>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <?= session()->getFlashdata('error') ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <?php endif; ?>
+
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="table-responsive">
@@ -70,32 +77,38 @@
                                         <span class="badge <?= $statusClass ?>"><?= ucfirst(str_replace('_', ' ', $bahan['status'])) ?></span>
                                     </td>
                                     <td class="text-center">
-                                       <a href="/gudang/bahan_baku/edit/<?= $bahan['id']; ?>" class="btn btn-sm btn-info" title="Edit"><i class="fas fa-edit"></i></a>
-                                        <a href="#" class="btn btn-sm btn-danger" title="Hapus"><i class="fas fa-trash"></i></a>
+                                        <a href="/gudang/bahan_baku/edit/<?= $bahan['id']; ?>" class="btn btn-sm btn-info" title="Edit"><i class="fas fa-edit"></i></a>
+                                        <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#hapusModal<?= $bahan['id'] ?>" title="Hapus">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
                                     </td>
-                                    <div class="modal fade" id="updateStokModal<?= $bahan['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
+                                    <div class="modal fade" id="hapusModal<?= $bahan['id'] ?>" tabindex="-1" aria-labelledby="hapusModalLabel<?= $bahan['id'] ?>" aria-hidden="true">
+                                        <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Update Stok: <?= $bahan['nama']; ?></h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
+                                                    <h5 class="modal-title" id="hapusModalLabel<?= $bahan['id'] ?>">Konfirmasi Penghapusan</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
-                                                <form action="/gudang/bahan_baku/editStokBahanBaku/<?= $bahan['id']; ?>" method="post">
-                                                    <?= csrf_field(); ?>
-                                                    <div class="modal-body">
-                                                        <div class="form-group">
-                                                            <label for="jumlah">Jumlah Stok Baru</label>
-                                                            <input type="number" class="form-control" id="jumlah" name="jumlah" value="<?= $bahan['jumlah']; ?>" min="0" required>
-                                                            <small class="form-text text-muted">Stok saat ini: <?= $bahan['jumlah'] . ' ' . $bahan['satuan']; ?></small>
+                                                <div class="modal-body">
+                                                    <?php if ($bahan['status'] == 'kadaluarsa') : ?>
+                                                        <p>Anda yakin ingin menghapus data bahan baku berikut?</p>
+                                                        <strong><?= esc($bahan['nama']) ?></strong>
+                                                        <br>
+                                                        <small class="text-muted">Status: <?= ucfirst(str_replace('_', ' ', $bahan['status'])) ?></small>
+                                                    <?php else : ?>
+                                                        <div class="alert alert-warning">
+                                                            <strong>Gagal!</strong> Bahan baku "<?= esc($bahan['nama']) ?>" tidak dapat dihapus karena statusnya bukan "Kadaluarsa".
                                                         </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                                                        <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
-                                                    </div>
-                                                </form>
+                                                    <?php endif; ?>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <?php if ($bahan['status'] == 'kadaluarsa') : ?>
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                                        <a href="/gudang/bahan_baku/hapus/<?= $bahan['id']; ?>" class="btn btn-danger">Ya, Hapus</a>
+                                                    <?php else : ?>
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Kembali</button>
+                                                    <?php endif; ?>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

@@ -62,14 +62,24 @@ class Gudang extends BaseController
         }
 
         // Simpan data ke database
+         $tanggalKadaluarsa = $this->request->getPost('tanggal_kadaluarsa');
+        $jumlah = $this->request->getPost('jumlah');
+
+        $status = 'tersedia';
+        if ($jumlah <= 0) {
+            $status = 'habis';
+        } elseif (strtotime($tanggalKadaluarsa) < strtotime(date('Y-m-d'))) {
+            $status = 'kadaluarsa';
+        }
+
         $this->bahanBakuModel->save([
             'nama' => $this->request->getPost('nama'),
             'kategori' => $this->request->getPost('kategori'),
-            'jumlah' => $this->request->getPost('jumlah'),
+            'jumlah' => $jumlah,
             'satuan' => $this->request->getPost('satuan'),
             'tanggal_masuk' => $this->request->getPost('tanggal_masuk'),
-            'tanggal_kadaluarsa' => $this->request->getPost('tanggal_kadaluarsa'),
-            'status' => 'tersedia'
+            'tanggal_kadaluarsa' => $tanggalKadaluarsa,
+            'status' => $status
         ]);
 
         // Set pesan sukses dan redirect
@@ -126,17 +136,42 @@ class Gudang extends BaseController
             return redirect()->to('/gudang/bahan_baku/edit/' . $id)->withInput();
         }
 
+        $tanggalKadaluarsa = $this->request->getPost('tanggal_kadaluarsa');
+        $jumlah = $this->request->getPost('jumlah');
+
+        $status = 'tersedia';
+        if ($jumlah <= 0) {
+            $status = 'habis';
+        } elseif (strtotime($tanggalKadaluarsa) < strtotime(date('Y-m-d'))) {
+            $status = 'kadaluarsa';
+        }
+
         $this->bahanBakuModel->save([
             'id' => $id,
             'nama' => $this->request->getPost('nama'),
             'kategori' => $this->request->getPost('kategori'),
-            'jumlah' => $this->request->getPost('jumlah'),
+            'jumlah' => $jumlah,
             'satuan' => $this->request->getPost('satuan'),
             'tanggal_masuk' => $this->request->getPost('tanggal_masuk'),
-            'tanggal_kadaluarsa' => $this->request->getPost('tanggal_kadaluarsa'),
+            'tanggal_kadaluarsa' => $tanggalKadaluarsa,
+            'status' => $status
         ]);
 
         session()->setFlashdata('success', 'Data bahan baku berhasil diubah.');
+        return redirect()->to('/gudang/bahan_baku');
+    }
+
+    public function hapusBahanBaku($id)
+    { 
+        $bahan = $this->bahanBakuModel->find($id);
+
+        if ($bahan && $bahan['status'] == 'kadaluarsa') {
+            $this->bahanBakuModel->delete($id);
+            session()->setFlashdata('success', 'Data bahan baku berhasil dihapus.');
+        } else {
+            session()->setFlashdata('error', 'Hanya bahan baku dengan status "Kadaluarsa" yang dapat dihapus.');
+        }
+
         return redirect()->to('/gudang/bahan_baku');
     }
 }

@@ -34,6 +34,7 @@ $routes->group('gudang', ['filter' => 'auth:gudang'], function ($routes) {
     $routes->get('bahan_baku/edit/(:num)', 'Gudang::editBahanBaku/$1');
     $routes->post('bahan_baku/edit/(:num)', 'Gudang::updateBahanBaku/$1');
     $routes->post('bahan_baku/editStokBahanBaku/(:num)', 'Gudang::editStokBahanBaku/$1');
+    $routes->get('bahan_baku/hapus/(:num)', 'Gudang::hapusBahanBaku/$1');
 });
 
 
